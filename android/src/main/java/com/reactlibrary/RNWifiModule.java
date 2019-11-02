@@ -104,7 +104,7 @@ public class RNWifiModule extends ReactContextBaseJavaModule {
 	@ReactMethod
 	public void forceWifiUsage(boolean useWifi) {
         boolean canWriteFlag = false;
-		
+
         if (useWifi) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
@@ -525,10 +525,10 @@ public class RNWifiModule extends ReactContextBaseJavaModule {
 		return Build.VERSION.SDK_INT >= Build.VERSION_CODES.M;
 	}
 
-	/**
-	 * @return true if the current sdk is above or equal to Android M
-	 */
-	private static boolean isAndroid10OrLater() {
-		return Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q;
-	}
+	// /**
+	//  * @return true if the current sdk is above or equal to Android M
+	//  */
+	// private static boolean isAndroid10OrLater() {
+	// 	return Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q;
+	// }
 }
