@@ -197,9 +197,9 @@ public class RNWifiModule extends ReactContextBaseJavaModule {
 		// FIXME: and what about if location is off?
 		if (isLocationGranted) {
 			final WIFI_ENCRYPTION encryption = findEncryptionByScanning(SSID);
-			if (encryption != null) {
-				promise.reject("notInRange", String.format("Not in range of the provided SSID: %s ", SSID));
-			}
+			// if (encryption != null) {
+				// promise.reject("notInRange", String.format("Not in range of the provided SSID: %s ", SSID));
+			// }
 			connectTo(SSID, password, encryption, promise);
 		}
 
